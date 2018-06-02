@@ -1,0 +1,26 @@
+name = "africa"
+license = "MIT"
+licenselink = "http://www.ulyssesmurja.com/LICENSE.md"
+description = "Simple portfolio and blog Hugo Theme"
+homepage = "http://www.ulyssesmurja.com/"
+tags = [
+  "blog",
+  "minimal",
+  "minimalist",
+  "responsive",
+  "simple",
+  "clean",
+  "personal"
+]
+features = [
+  "analytics",
+  "favicon",
+  "pagination",
+  "single-column",
+  "syntax-highlighting"
+]
+min_version = "0.32"
+
+[author]
+  name = "Ulysses Ferreira Murja"
+  homepage = "https://www.ulyssesmurja.com"

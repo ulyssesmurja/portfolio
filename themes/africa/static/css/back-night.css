@@ -1,0 +1,53 @@
+body.fundo-branco{
+  color: #000;
+  background-color: #0c0c0c;
+}
+body.fundo-branco a{
+  color: #fff;
+}  
+body.fundo-preto {
+  background-color: #fff !important;
+  color: #000 !important;
+}
+body.fundo-preto a{
+  color: #000 !important;
+}
+body.fundo-preto h1{
+  color: #000 !important;
+}
+body.fundo-preto h2{
+  color: #f2f2f2;
+   transition: 1.2s !important;
+}
+body.fundo-branco label{
+  color: #fff;
+}
+body.fundo-branco .form-field-text{
+  color: #fff !important;
+}
+body.fundo-branco span.footer-credit a{
+  background-color: #fff;
+  color: #fff;
+}
+body.fundo-branco span.footer-credit a:hover{
+  background-color: #0c0c0c;
+}
+body.fundo-branco .work-with{
+  color: #444 !important;
+}
+body.fundo-branco .work-with a{
+  color: #444 !important;
+}
+body.fundo-preto .scroll{
+    border-right: 2px solid #000 !important;
+    border-bottom: 2px solid #000 !important;
+}
+body.fundo-preto h2{
+  color: #f2f2f2 !important;
+}
+body.fundo-branco h2{
+  color: #000 !important;
+}
+body.fundo-branco h1{
+  color: #fff !important;
+}
