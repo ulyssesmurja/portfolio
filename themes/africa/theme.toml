@@ -1,8 +1,8 @@
 name = "africa"
 license = "MIT"
-licenselink = "http://www.ulyssesmurja.com/LICENSE.md"
+licenselink = "https://www.ulyssesmurja.com/LICENSE.md"
 description = "Simple portfolio and blog Hugo Theme"
-homepage = "http://www.ulyssesmurja.com/"
+homepage = "https://www.ulyssesmurja.com/"
 tags = [
   "blog",
   "minimal",

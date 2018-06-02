@@ -2,7 +2,7 @@
 
 A simple and clean blog theme for Hugo.
 
-![](http://www.ulyssesmurja.com/blob/master/images/screenshot.png)
+![](https://www.ulyssesmurja.com/blob/master/images/screenshot.png)
 
 ## How to use this theme
 
@@ -61,7 +61,7 @@ theme = "africa" # set the theme
 
 
 
-You can look at full working [`config.toml`](http://www.ulyssesmurja.com/blob/master/exampleSite/config.toml) inside the [exampleSite](http://www.ulyssesmurja.com/tree/master/exampleSite) folder.
+You can look at full working [`config.toml`](https://www.ulyssesmurja.com/blob/master/exampleSite/config.toml) inside the [exampleSite](https://www.ulyssesmurja.com/tree/master/exampleSite) folder.
 
 ### Build & Test
 
@@ -94,7 +94,7 @@ You can disable comments for a post by adding the following to your page meta da
 
 ## License
 
-africa is licensed under the [MIT license](http://www.ulyssesmurja.com/LICENSE.md).
+africa is licensed under the [MIT license](https://www.ulyssesmurja.com/LICENSE.md).
 
 ## Author
 
