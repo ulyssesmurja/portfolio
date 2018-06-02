@@ -9,9 +9,6 @@
     <base href="{{ .Site.BaseURL }}">
     <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
     <link rel="canonical" href="{{ .Permalink }}">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <!--<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script> -->
-    <script src="{{ .Site.BaseURL }}js/jquery.waypoints.min.js"></script>
     <!--<link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700">-->
     <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
     <link rel="stylesheet" href="{{ "css/style.min.css" | absURL }}">
@@ -37,7 +34,8 @@
       <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
       <link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
     {{ end }}
-
+    <script async src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script async src="{{ .Site.BaseURL }}js/jquery.waypoints.min.js"></script>
     {{ .Hugo.Generator }}
   </head>
 
