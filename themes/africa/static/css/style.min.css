@@ -54,7 +54,7 @@ body{
 }
 body, a {
   transition: 0.8s;
-}/*
+}
 body.fundo-preto{
   color: #000 !important;
   background-color: #0c0c0c !important;
@@ -75,7 +75,7 @@ body.fundo-branco h1{
 body.fundo-branco h2{
   color: #f2f2f2;
    transition: 1.2s !important;
-}*/
+}
 section{
   min-height: 100vh;
 }
