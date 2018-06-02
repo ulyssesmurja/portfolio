@@ -1,0 +1,39 @@
+baseURL = "http://example.org/"
+languageCode = "pt-br"
+title = "Ulysses Murja"
+
+theme = "africa" # set the theme
+
+[params] # theme parameters
+    author = "Ulysses Murja" # author's name
+    info = "Desenvolvedor Web" # author's job title or info
+    description = "Portfolio" # site description
+    keywords = "website,SEO,ecommerce" # site keywords
+
+    # wether you want to hide copyright and credits in the footer
+    hideCredits = false
+    hideCopyright = false
+    
+# Social links
+[[params.social]]
+    name = "LinkedIn"
+    weight = 3
+    url = "https://www.linkedin.com/in/ulyssesmurja/"
+[[params.social]]
+    name = "Github"
+    weight = 1
+    url = "https://github.com/ulyssesmurja/"
+[[params.social]]
+    name = "Facebook"
+    weight = 2
+    url = "https://facebook.com/ulyssesmrj/"
+
+# Menu links
+[[menu.main]]
+    name = "Blog"
+    weight = 1
+    url  = "/posts/"
+[[menu.main]]
+    name = "About"
+    weight = 2
+    url = "/about/"
