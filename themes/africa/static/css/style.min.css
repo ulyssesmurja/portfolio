@@ -1003,23 +1003,23 @@ span.footer-credit a:hover{
     line-height: 5.5rem;
   }
   .random-titles {
-    font-size: 9rem;
-    line-height: 9rem;
+    font-size: 17rem;
+    line-height: 17rem;
     position: relative !important;
     word-wrap: break-word;
     display: block;
   }
   span.sites{
-    font-size: 20rem;
-    line-height: 20rem;
+    font-size: 40rem;
+    line-height: 40rem;
   }
   span.seo{
-    font-size: 20rem;
-    line-height: 20rem;
+    font-size: 50rem;
+    line-height: 50rem;
   }
   span.ecommerce{
-    font-size: 14rem;
-    line-height: 14rem;
+    font-size: 20rem;
+    line-height: 20rem;
   }
   .footer {
     line-height: 3rem;
