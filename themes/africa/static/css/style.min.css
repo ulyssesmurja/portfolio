@@ -64,7 +64,6 @@ body {
     overflow-x: hidden
 }
 
-a,
 body {
     transition: .8s
 }
@@ -315,11 +314,6 @@ img {
 .content article header h1,
 .content article header h2 {
     margin: 0
-}
-
-.content article header h2 {
-    font-size: 1.8rem;
-    color: #323232
 }
 
 .wrapper {
