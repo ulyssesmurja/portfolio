@@ -983,6 +983,10 @@ span.footer-credit a:hover{
     font-size: 15rem;
     line-height: 15rem;
   }
+  .form-content svg{
+    position: absolute;
+    height: 0;
+  }
 }
 
 /*Mobile General*/
@@ -1003,27 +1007,30 @@ span.footer-credit a:hover{
     line-height: 5.5rem;
   }
   .random-titles {
-    font-size: 17rem;
-    line-height: 17rem;
+    font-size: 13rem;
+    line-height: 13rem;
     position: relative !important;
     word-wrap: break-word;
     display: block;
   }
   span.sites{
-    font-size: 40rem;
-    line-height: 40rem;
+    font-size: 32rem;
+    line-height: 32rem;
   }
   span.seo{
-    font-size: 50rem;
-    line-height: 50rem;
+    font-size: 36rem;
+    line-height: 36rem;
   }
   span.ecommerce{
-    font-size: 20rem;
-    line-height: 20rem;
+    font-size: 16rem;
+    line-height: 16rem;
   }
   .footer {
     line-height: 3rem;
     font-size: 0.8rem;
+  }
+  .navigation ul li a {
+    margin-right: 0;
   }
 }
 /*Mobile General Portraits*/
