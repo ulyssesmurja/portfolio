@@ -289,7 +289,8 @@ img {
 }
 
 .container.list {
-    padding-top: 6rem
+    padding-top: 6rem;
+    min-height: 100%;
 }
 
 .container.list h1 {
