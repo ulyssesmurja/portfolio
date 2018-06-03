@@ -377,7 +377,11 @@ img {
     margin: 3.2rem 0;
     list-style: none;
     padding: 0;
-    min-height: 68vh
+    min-height: 68vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 }
 
 section.container.list {
@@ -1170,7 +1174,7 @@ span.footer-credit a:hover {
     .list ul li {
         font-size: 1.2rem;
         line-height: 1.4rem;
-        margin: 1.5rem 0
+        margin: .5rem 0
     }
     .list ul li span {
         width: 14rem;
