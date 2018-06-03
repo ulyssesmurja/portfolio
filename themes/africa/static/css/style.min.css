@@ -1059,8 +1059,7 @@ span.footer-credit a:hover {
 }
 
 @media only screen and (max-device-width:600px) {
-    .field-float-label,
-    body {
+    .field-float-label{
         font-size: 1em;
         line-height: 1.2em
     }
