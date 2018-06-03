@@ -103,7 +103,7 @@
         container: '#clients-projects',
         trueOrder: false,
         waitForImages: false,
-        margin: 15,
+        margin: 0,
         columns: 2,
         breakAt: {
           768: 1
