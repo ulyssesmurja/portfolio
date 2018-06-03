@@ -993,6 +993,10 @@ span.footer-credit a:hover{
   .project-item p {
     opacity: 1 !important;
   }
+  .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
   h1 {
     width: 80%;
     font-size: 5.5rem;
@@ -1006,16 +1010,20 @@ span.footer-credit a:hover{
     display: block;
   }
   span.sites{
-    font-size: 10rem;
-    line-height: 10rem;
+    font-size: 20rem;
+    line-height: 20rem;
   }
   span.seo{
-    font-size: 10rem;
-    line-height: 10rem;
+    font-size: 20rem;
+    line-height: 20rem;
   }
   span.ecommerce{
-    font-size: 9rem;
-    line-height: 9rem;
+    font-size: 14rem;
+    line-height: 14rem;
+  }
+  .footer {
+    line-height: 3rem;
+    font-size: 0.8rem;
   }
 }
 /*Mobile General Portraits*/
