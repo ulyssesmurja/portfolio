@@ -269,6 +269,8 @@ img {
   display: block;
   position: relative;
   margin: 2rem 0 !important;
+  line-height: 9rem;
+  font-size: 9rem;
 }
 .centered .error h2 {
     margin-top: 2rem;
@@ -373,6 +375,7 @@ section.container.list{
 }
 .list ul li {
     font-size: 1.6rem
+    padding: 1rem 0;
 }
 
 .list ul li span {
