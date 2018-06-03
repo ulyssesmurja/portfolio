@@ -975,7 +975,7 @@ span.footer-credit a:hover{
     font-size: 20rem;
     line-height: 20rem;
   }
-span.seo{
+  span.seo{
     font-size: 20rem;
     line-height: 20rem;
   }
@@ -995,6 +995,27 @@ span.seo{
   }
   h1 {
     width: 80%;
+    font-size: 5.5rem;
+    line-height: 5.5rem;
+  }
+  .random-titles {
+    font-size: 9rem;
+    line-height: 9rem;
+    position: relative !important;
+    word-wrap: break-word;
+    display: block;
+  }
+  span.sites{
+    font-size: 10rem;
+    line-height: 10rem;
+  }
+  span.seo{
+    font-size: 10rem;
+    line-height: 10rem;
+  }
+  span.ecommerce{
+    font-size: 9rem;
+    line-height: 9rem;
   }
 }
 /*Mobile General Portraits*/
