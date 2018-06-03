@@ -259,6 +259,14 @@ img {
     margin-top: 1.6rem;
     margin-bottom: 3.2rem */
 }
+.container.list{
+    padding-top: 6rem;
+}
+.container.list h1{
+  display: block;
+  position: relative;
+  margin: 2rem 0 !important;
+}
 .centered .error h2 {
     margin-top: 2rem;
     margin-bottom: 3.2rem;
@@ -354,9 +362,12 @@ img {
 .list ul {
     margin: 3.2rem 0 3.2rem 0;
     list-style: none;
-    padding: 0
+    padding: 0;
+    min-height: 68vh;
 }
-
+section.container.list{
+  min-height: 0;
+}
 .list ul li {
     font-size: 1.6rem
 }
@@ -1018,8 +1029,8 @@ span.footer-credit a:hover{
     line-height: 32rem;
   }
   span.seo{
-    font-size: 36rem;
-    line-height: 36rem;
+    font-size: 33rem;
+    line-height: 33rem;
   }
   span.ecommerce{
     font-size: 16rem;
@@ -1031,6 +1042,25 @@ span.footer-credit a:hover{
   }
   .navigation ul li a {
     margin-right: 0;
+  }
+  span.footer-credit a:active {
+    background-color: #fff;
+    color: #e0e0e0 !important;
+  }
+  #clients-projects {
+    margin-top: 12rem;
+  }
+  .container.list{
+    padding-top: 4rem;
+  }
+  .list ul li {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    margin: 1.5rem 0;
+  }
+  .list ul li span {
+    width: 14rem;
+    margin-right: 2rem;
   }
 }
 /*Mobile General Portraits*/

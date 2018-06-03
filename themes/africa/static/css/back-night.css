@@ -32,6 +32,9 @@ body.fundo-branco span.footer-credit a{
 body.fundo-branco span.footer-credit a:hover{
   background-color: #0c0c0c;
 }
+body.fundo-branco span.footer-credit a:active{
+  background-color: #0c0c0c;
+}
 body.fundo-branco .work-with{
   color: #444 !important;
 }
