@@ -14,12 +14,13 @@
     <base href="{{ .Site.BaseURL }}">
     <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
     <link rel="canonical" href="{{ .Permalink }}">
-    <!--<link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700">-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" href="{{ "css/style.min.css" | absURL }}">
     {{ range .Site.Params.custom_css }}
       <link rel="stylesheet" href="{{ . | absURL }}">
     {{ end }}
+    <meta property="og:url" content="{{ .Site.BaseURL }}" />
+    <meta property="og:title" content="Ulysses Murja | Web Developer Freelance & Digital Marketing" />
+    <meta property="og:image" content="{{ "/images/apple-icon-180x180.png" | absURL }}">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ "/images/favicon-32x32.png" | absURL }}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ "/images/favicon-16x16.png" | absURL }}">
     <link rel="apple-touch-icon" sizes="57x57" href="{{ "/images/apple-icon-57x57.png" | absURL }}">
