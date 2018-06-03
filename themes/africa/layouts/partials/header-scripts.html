@@ -1,15 +1,1 @@
-<script>
-    function getStylesheet() {
-          var currentTime = new Date().getHours();
-            if (0 <= currentTime&&currentTime < 7) {
-              document.write('<link rel="stylesheet" href="https://www.ulyssesmurja.com.br/css/back-night.css" type="text/css">');
-            }
-            if (7 <= currentTime&&currentTime < 18) {
-              document.write('<link rel="stylesheet" href="https://www.ulyssesmurja.com.br/css/back-day.css" type="text/css">');
-            }
-            if (18 <= currentTime&&currentTime < 24) {
-              document.write('<link rel="stylesheet" href="https://www.ulyssesmurja.com.br/css/back-night.css" type="text/css">');
-            }
-      }
-    getStylesheet();
-</script>
+<script>function getStylesheet(){var e=(new Date).getHours();0<=e&&e<7&&document.write('<link rel="stylesheet" href="https://www.ulyssesmurja.com.br/css/back-night.css" type="text/css">'),7<=e&&e<18&&document.write('<link rel="stylesheet" href="https://www.ulyssesmurja.com.br/css/back-day.css" type="text/css">'),18<=e&&e<24&&document.write('<link rel="stylesheet" href="https://www.ulyssesmurja.com.br/css/back-night.css" type="text/css">')}getStylesheet();</script>
