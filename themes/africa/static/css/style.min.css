@@ -933,6 +933,7 @@ span.footer-credit a:hover{
   .field-float-label {
     font-size: 1em;
     line-height: 1.2em;
+    top: 15px;
   }
   .contact {
     flex-direction: column;
@@ -947,7 +948,40 @@ span.footer-credit a:hover{
     height: 9rem;
   }
   #work-and-contact{
-    
+    min-height: 10rem !important;
+  }
+  .work-with {
+    min-height: 200px;
+    padding: 5rem 0;
+  }
+  .contact {
+    padding: 0 0 3rem 0;
+    max-height: 250px;
+    line-height: 2rem;
+  }
+  .navigation a {
+    font-size: 1.2rem;
+    line-height: 4rem;
+    letter-spacing: .1rem;
+  }
+  .random-titles {
+    font-size: 15rem;
+    line-height: 15rem;
+    position: relative !important;
+    word-wrap: break-word;
+    display: block;
+  }
+  span.sites{
+    font-size: 20rem;
+    line-height: 20rem;
+  }
+span.seo{
+    font-size: 20rem;
+    line-height: 20rem;
+  }
+  span.ecommerce{
+    font-size: 15rem;
+    line-height: 15rem;
   }
 }
 
