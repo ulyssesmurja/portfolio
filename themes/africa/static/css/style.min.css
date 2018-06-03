@@ -170,7 +170,12 @@ h6 {
 }
 
 article {
-    padding: 5rem 1rem
+    padding: 3rem .5rem;
+}
+article h2{
+  color: #888;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
 }
 
 h2 {
@@ -1199,6 +1204,7 @@ body {
 h1 {
     font-size: 2em;
     margin: .67em 0
+    line-height: 2em;
 }
 
 hr {
