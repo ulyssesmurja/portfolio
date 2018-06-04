@@ -117,20 +117,6 @@ $.fn.serializeObject = function()
 };
 
 
-var $form = $('form#sayhello'),
-    url = 'https://script.google.com/macros/s/AKfycbxHoruJr4vhN8coU-wyRqtA6M2Xspp82Um9z7X6q6NEm6-oJeYP/exec'
-
-$('#button-submit').on('click', function(e) {
-  e.preventDefault();
-  var jqxhr = $.ajax({
-    url: url,
-    method: "GET",
-    dataType: "json",
-    data: $form.serializeObject()
-  }).success(
-    // do something
-  );
-});
 
 
 
