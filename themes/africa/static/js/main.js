@@ -99,6 +99,9 @@ $(".button-submit").click(function() {
     }
 });
 
+
+
+
 var $form = $('form#sayhello'),
     url = 'https://script.google.com/macros/s/AKfycbxHoruJr4vhN8coU-wyRqtA6M2Xspp82Um9z7X6q6NEm6-oJeYP/exec'
 
@@ -119,7 +122,9 @@ $('#button-submit').on('click', function(e) {
 
 
 
-
+const email = document.querySelector('.required');
+const update = document.querySelector('.button-submit');
+email.addEventListener('input', inputEmail);
 
 function inputEmail(e) {
     const input = e.target.value;
@@ -131,7 +136,6 @@ function inputEmail(e) {
         update.classList.add('failure')
     }
 };
-
 $('form input').on('keypress', function(e) {
     return e.which !== 13
 })
