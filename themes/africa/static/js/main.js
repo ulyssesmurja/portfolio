@@ -112,7 +112,7 @@ $('#button-submit').on('click', function(e) {
   }).success(
     // do something
   );
-})
+});
 
 
 
@@ -131,6 +131,7 @@ function inputEmail(e) {
         update.classList.add('failure')
     }
 };
+
 $('form input').on('keypress', function(e) {
     return e.which !== 13
 })
