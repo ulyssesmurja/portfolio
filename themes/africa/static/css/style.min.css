@@ -1300,6 +1300,8 @@ button {
     border: none;
 }
 
+*:focus {outline:0 !important}
+
 [type=button]::-moz-focus-inner,
 [type=reset]::-moz-focus-inner,
 [type=submit]::-moz-focus-inner,
@@ -1308,12 +1310,7 @@ button::-moz-focus-inner {
     padding: 0
 }
 
-[type=button]:-moz-focusring,
-[type=reset]:-moz-focusring,
-[type=submit]:-moz-focusring,
-button:-moz-focusring {
-    outline: 1px dotted ButtonText
-}
+
 
 fieldset {
     padding: .35em .75em .625em
