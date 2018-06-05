@@ -14,13 +14,13 @@
     <base href="{{ .Site.BaseURL }}">
     <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
     <link rel="canonical" href="{{ .Permalink }}">
-    <link rel="stylesheet" href="{{ "css/style.min.css" | absURL }}" media="none" onload="if(media!='all')media='all'">
     {{ range .Site.Params.custom_css }}
       <link rel="stylesheet" href="{{ . | absURL }}">
     {{ end }}
     <meta property="og:url" content="{{ .Site.BaseURL }}" />
     <meta property="og:title" content="Ulysses Murja | Web Developer Freelance & Digital Marketing" />
     <meta property="og:image" content="{{ "/images/apple-icon-180x180.png" | absURL }}">
+    <link rel="stylesheet" href="{{ "css/style.min.css" | absURL }}">
     <link rel="apple-touch-icon" sizes="180x180" href="{{ "/images/apple-icon-180x180.png" | absURL }}">
     <link rel="icon" type="image/png" sizes="192x192"  href="{{ "/images/android-icon-192x192.png" | absURL }}">
     <link rel="icon" type="image/png" sizes="96x96" href="{{ "/images/favicon-96x96.png" | absURL }}">
@@ -34,7 +34,6 @@
   <body class="fundo-branco">
     <noscript>
       <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TPW3WTV"height="0" width="0" style="display:none;visibility:hidden"></iframe>
-      <link rel="stylesheet" href="{{ "css/style.min.css" | absURL }}">
     </noscript>
     <main class="wrapper">
       {{ partial "header.html" . }}
