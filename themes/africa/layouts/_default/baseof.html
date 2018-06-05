@@ -14,11 +14,7 @@
     <base href="{{ .Site.BaseURL }}">
     <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
     <link rel="canonical" href="{{ .Permalink }}">
-
     <link rel="stylesheet" href="{{ "css/style.min.css" | absURL }}" media="none" onload="if(media!='all')media='all'">
-    
-
-
     {{ range .Site.Params.custom_css }}
       <link rel="stylesheet" href="{{ . | absURL }}">
     {{ end }}
@@ -33,7 +29,6 @@
       <link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
     {{ end }}
     <script async src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script async src="{{ .Site.BaseURL }}js/main.js"></script>
     {{ .Hugo.Generator }}
   </head>
 
@@ -50,5 +45,6 @@
       {{ partial "footer.html" . }}
     </main>
     {{ template "_internal/google_analytics.html" . }}
+    <script src="{{ .Site.BaseURL }}js/main.js"></script>
   </body>
 </html>
