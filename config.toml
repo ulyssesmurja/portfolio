@@ -37,8 +37,3 @@ theme = "africa" # set the theme
     name = "About"
     weight = 2
     url = "/about/"
-
-[[headers]]
-for = "/static/*"
-[headers.values]
-Cache-Control = "public, max-age=360000"
