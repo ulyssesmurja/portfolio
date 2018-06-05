@@ -1295,7 +1295,8 @@ select {
 [type=reset],
 [type=submit],
 button {
-    -webkit-appearance: button
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
 }
 
 [type=button]::-moz-focus-inner,
