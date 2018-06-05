@@ -1297,6 +1297,7 @@ select {
 button {
     -webkit-appearance: none !important;
     -moz-appearance: none !important;
+    border: none;
 }
 
 [type=button]::-moz-focus-inner,
