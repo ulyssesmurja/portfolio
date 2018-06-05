@@ -16,7 +16,7 @@
     <link rel="canonical" href="{{ .Permalink }}">
 
     <link rel="stylesheet" href="{{ "css/style.min.css" | absURL }}" media="none" onload="if(media!='all')media='all'">
-    <noscript><link rel="stylesheet" href="{{ "css/style.min.css" | absURL }}"></noscript>
+    
 
 
     {{ range .Site.Params.custom_css }}
@@ -39,6 +39,7 @@
   <body class="fundo-branco">
     <noscript>
       <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TPW3WTV"height="0" width="0" style="display:none;visibility:hidden"></iframe>
+      <link rel="stylesheet" href="{{ "css/style.min.css" | absURL }}">
     </noscript>
     <main class="wrapper">
       {{ partial "header.html" . }}
