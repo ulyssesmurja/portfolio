@@ -112,7 +112,7 @@
         <span class="field-text-bar"></span>
         <label class="field-float-label" id="your-email">Your email</label>
         <div id="button-submit-content">
-          <div class="button-submit" id="button-submit">SAY HELLO!</div>
+          <button type="submit" class="button-submit" id="button-submit">SAY HELLO!</button>
           <div class="loader-animation-content">
             <span class="loader loader-circle-1"></span>
             <span class="loader loader-circle-2"></span>
@@ -139,7 +139,11 @@
   </div>
 </section>
 
-
+<form name="integragoogle">
+  <input id="telefone" type="phone" name="telefone" placeholder="(DDD)99999-9999" required>
+  <textarea id="mensagem" name="mensagem" placeholder="Sua mensagem..." required></textarea>
+  <button type="submit" class="btn btn-primary col-xs-12" id="enviar">Enviar</button>
+</form>
 
 
 <script>
