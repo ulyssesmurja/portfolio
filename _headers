@@ -4,3 +4,11 @@
 /images/*
   Cache-Control: max-age: 31536000
   Expires: 31536000
+
+ /themes/africa/static/*
+   # Headers for that path:
+   Cache-Control: public, max-age=360000 
+
+/static/*
+   # Headers for that path:
+   Cache-Control: public, max-age=360000 
