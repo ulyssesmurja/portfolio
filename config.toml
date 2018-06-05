@@ -39,10 +39,6 @@ theme = "africa" # set the theme
     url = "/about/"
 
 [[headers]]
-for = "/themes/africa/static/*"
-[headers.values]
-Cache-Control = "public, max-age=360000"
-
 for = "/static/*"
 [headers.values]
 Cache-Control = "public, max-age=360000"
