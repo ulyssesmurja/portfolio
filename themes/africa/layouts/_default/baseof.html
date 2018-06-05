@@ -14,7 +14,11 @@
     <base href="{{ .Site.BaseURL }}">
     <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
     <link rel="canonical" href="{{ .Permalink }}">
-    <link rel="stylesheet" href="{{ "css/style.min.css" | absURL }}">
+
+    <link rel="stylesheet" href="{{ "css/style.min.css" | absURL }}" media="none" onload="if(media!='all')media='all'">
+    <noscript><link rel="stylesheet" href="{{ "css/style.min.css" | absURL }}"></noscript>
+
+
     {{ range .Site.Params.custom_css }}
       <link rel="stylesheet" href="{{ . | absURL }}">
     {{ end }}
