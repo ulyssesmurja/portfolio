@@ -1,6 +1,201 @@
 var body=$("body");body.addClass("fundo-preto"),$(window).scroll(function(o){$(window).scrollTop()<=300?(body.addClass("fundo-preto"),body.removeClass("fundo-branco")):(body.addClass("fundo-branco"),body.removeClass("fundo-preto"))});
-var _createClass=function(){function e(e,t){for(var a=0;a<t.length;a++){var n=t[a];n.enumerable=n.enumerable||!1,n.configurable=!0,"value"in n&&(n.writable=!0),Object.defineProperty(e,n.key,n)}}return function(t,a,n){return a&&e(t.prototype,a),n&&e(t,n),t}}();function _classCallCheck(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var TextScramble=function(){function e(t){_classCallCheck(this,e),this.el=t,this.chars="!<>-_\\/[]{}—=+*^?#___",this.update=this.update.bind(this)}return _createClass(e,[{key:"setText",value:function(e){var t=this,a=this.el.innerText,n=Math.max(a.length,e.length),s=new Promise(function(e){return t.resolve=e});this.queue=[];for(var r=0;r<n;r++){var i=a[r]||"",o=e[r]||"",h=Math.floor(40*Math.random()),u=h+Math.floor(40*Math.random());this.queue.push({from:i,to:o,start:h,end:u})}return cancelAnimationFrame(this.frameRequest),this.frame=0,this.update(),s}},{key:"update",value:function(){for(var e="",t=0,a=0,n=this.queue.length;a<n;a++){var s=this.queue[a],r=s.from,i=s.to,o=s.start,h=s.end,u=s.char;this.frame>=h?(t++,e+=i):this.frame>=o?((!u||Math.random()<.28)&&(u=this.randomChar(),this.queue[a].char=u),e+='<span class="dud">'+u+"</span>"):e+=r}this.el.innerHTML=e,t===this.queue.length?this.resolve():(this.frameRequest=requestAnimationFrame(this.update),this.frame++)}},{key:"randomChar",value:function(){return this.chars[Math.floor(Math.random()*this.chars.length)]}}]),e}(),phrases=['<span class="sites">Sites</span>','<span class="mkt">Digital Marketing</span>','<span class="seo">SEO</span>','<span class="ecommerce">Ecommerce</span>','<span class="mkt">Google Adwords</span>'],el=document.querySelector(".text"),fx=new TextScramble(el),counter=0,next=function e(){fx.setText(phrases[counter]).then(function(){setTimeout(e,3e3)}),counter=(counter+1)%phrases.length};next();
-Macy({container:"#clients-projects",trueOrder:!1,waitForImages:!1,margin:15,columns:2,breakAt:{768:1}});
-var wrapper=$("#button-submit-content");$(".button-submit").click(function(){wrapper.not(".checked")&&(wrapper.addClass("checked"),setTimeout(function(){wrapper.removeClass("checked"),document.getElementById("name").value=""},8e3))});
-$.fn.serializeObject=function(){var e={},i=this.serializeArray();return $.each(i,function(){e[this.name]?(e[this.name].push||(e[this.name]=[e[this.name]]),e[this.name].push(this.value||"")):e[this.name]=this.value||""}),e};
-var email=document.querySelector(".required"),update=document.querySelector(".button-submit");function inputEmail(t){var e=t.target.value;e&&/(^\w.*@\w+\.\w)/.test(e)?(update.classList.add("show-submit-button"),update.classList.remove("failure")):(update.classList.remove("show-submit-button"),update.classList.add("failure"))}email.addEventListener("input",inputEmail),$("form input").on("keypress",function(t){return 13!==t.which});var scriptURL="https://script.google.com/macros/s/AKfycbxHoruJr4vhN8coU-wyRqtA6M2Xspp82Um9z7X6q6NEm6-oJeYP/exec",form=document.forms.integragoogle;form.addEventListener("submit",function(t){t.preventDefault(),fetch(scriptURL,{method:"POST",body:new FormData(form)})});
+
+
+
+
+
+
+
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+// ——————————————————————————————————————————————————
+// TextScramble
+// ——————————————————————————————————————————————————
+
+var TextScramble = function () {
+  function TextScramble(el) {
+    _classCallCheck(this, TextScramble);
+
+    this.el = el;
+    this.chars = '!<>-_\\/[]{}—=+*^?#___';
+    this.update = this.update.bind(this);
+  }
+
+  _createClass(TextScramble, [{
+    key: 'setText',
+    value: function setText(newText) {
+      var _this = this;
+
+      var oldText = this.el.innerText;
+      var length = Math.max(oldText.length, newText.length);
+      var promise = new Promise(function (resolve) {
+        return _this.resolve = resolve;
+      });
+      this.queue = [];
+      for (var i = 0; i < length; i++) {
+        var from = oldText[i] || '';
+        var to = newText[i] || '';
+        var start = Math.floor(Math.random() * 40);
+        var end = start + Math.floor(Math.random() * 40);
+        this.queue.push({ from: from, to: to, start: start, end: end });
+      }
+      cancelAnimationFrame(this.frameRequest);
+      this.frame = 0;
+      this.update();
+      return promise;
+    }
+  }, {
+    key: 'update',
+    value: function update() {
+      var output = '';
+      var complete = 0;
+      for (var i = 0, n = this.queue.length; i < n; i++) {
+        var _queue$i = this.queue[i],
+            from = _queue$i.from,
+            to = _queue$i.to,
+            start = _queue$i.start,
+            end = _queue$i.end,
+            char = _queue$i.char;
+
+        if (this.frame >= end) {
+          complete++;
+          output += to;
+        } else if (this.frame >= start) {
+          if (!char || Math.random() < 0.28) {
+            char = this.randomChar();
+            this.queue[i].char = char;
+          }
+          output += '<span class="dud">' + char + '</span>';
+        } else {
+          output += from;
+        }
+      }
+      this.el.innerHTML = output;
+      if (complete === this.queue.length) {
+        this.resolve();
+      } else {
+        this.frameRequest = requestAnimationFrame(this.update);
+        this.frame++;
+      }
+    }
+  }, {
+    key: 'randomChar',
+    value: function randomChar() {
+      return this.chars[Math.floor(Math.random() * this.chars.length)];
+    }
+  }]);
+
+  return TextScramble;
+}();
+
+// ——————————————————————————————————————————————————
+// Example
+// ——————————————————————————————————————————————————
+
+var phrases = ['<span class="sites">Sites</span>', '<span class="mkt">Digital Marketing</span>', '<span class="seo">SEO</span>', '<span class="ecommerce">Ecommerce</span>', '<span class="mkt">Google Adwords</span>']
+
+var el = document.querySelector('.text');
+var fx = new TextScramble(el);
+
+var counter = 0;
+var next = function next() {
+  fx.setText(phrases[counter]).then(function () {
+    setTimeout(next, 3000);
+  });
+  counter = (counter + 1) % phrases.length;
+};
+
+next();
+
+
+
+
+
+
+
+
+Macy({
+    container: '#clients-projects',
+    trueOrder: !1,
+    waitForImages: !1,
+    margin: 15,
+    columns: 2,
+    breakAt: {
+        768: 1
+    }
+});
+var wrapper = $("#button-submit-content");
+$(".button-submit").click(function() {
+    if (wrapper.not(".checked")) {
+        wrapper.addClass("checked");
+        setTimeout(function() {
+            wrapper.removeClass("checked");
+            document.getElementById('name').value = ""
+        }, 8000)
+    }
+});
+
+$.fn.serializeObject = function()
+{
+   var o = {};
+   var a = this.serializeArray();
+   $.each(a, function() {
+       if (o[this.name]) {
+           if (!o[this.name].push) {
+               o[this.name] = [o[this.name]];
+           }
+           o[this.name].push(this.value || '');
+       } else {
+           o[this.name] = this.value || '';
+       }
+   });
+   return o;
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var email = document.querySelector('.required');
+var update = document.querySelector('.button-submit');
+email.addEventListener('input', inputEmail);
+
+function inputEmail(e) {
+    var input = e.target.value;
+    if (input && /(^\w.*@\w+\.\w)/.test(input)) {
+        update.classList.add('show-submit-button');
+        update.classList.remove('failure')
+    } else {
+        update.classList.remove('show-submit-button');
+        update.classList.add('failure')
+    }
+};
+$('form input').on('keypress', function(e) {
+    return e.which !== 13
+})
+
+
+
+
+
+  var scriptURL = 'https://script.google.com/macros/s/AKfycbxHoruJr4vhN8coU-wyRqtA6M2Xspp82Um9z7X6q6NEm6-oJeYP/exec'
+  var form = document.forms['integragoogle']
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+  })
